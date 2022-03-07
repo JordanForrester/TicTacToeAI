@@ -1,5 +1,5 @@
-import java.awt.*;
-
+//import java.awt.*;
+import javax.swing.*;
 public class Board { // Class for the gamespace
 
     private int[][] gameSpace;// 1 indicates the player 0 indicates the AI
@@ -11,12 +11,19 @@ public class Board { // Class for the gamespace
     }
 
     public void playSpot(int x, int y, int symbl) {// Method to play a spot on the game board
-        gameSpace[x][y] = symbl;
+        if (gameSpace[x][y] == -1)
+            gameSpace[x][y] = symbl;
 
+    }
+
+    private boolean checkWin(){
+
+        
+        return false;
     }
 
     public String toString() {
 
-        return 
+        return " ";
     }
 }
